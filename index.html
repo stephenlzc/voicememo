@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>录音网站</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>选择类型并录音</h1>
-    <form id="recordForm">
-        <label>
-            <input type="radio" name="type" value="客户拜访"> ✏️ 客户拜访
-        </label>
-        <label>
-            <input type="radio" name="type" value="头脑风暴"> 🧠 头脑风暴
-        </label>
-        <label>
-            <input type="radio" name="type" value="待办事项"> 💼 待办事项
-        </label>
-    </form>
-    <button id="recordButton">开始录音</button>
-    <button id="playButton" disabled>播放录音</button>
-    <button id="sendButton" disabled>发送录音</button>
+    <div class="container">
+        <h1>选择类型并录音</h1>
+        <form id="recordForm">
+            <label>
+                <input type="radio" name="type" value="✏️ 客户拜访"> ✏️ 客户拜访
+            </label>
+            <label>
+                <input type="radio" name="type" value="🧠 头脑风暴"> 🧠 头脑风暴
+            </label>
+            <label>
+                <input type="radio" name="type" value="💼 待办事项"> 💼 待办事项
+            </label>
+        </form>
+        <button id="recordButton" class="btn">开始录音</button>
+        <button id="playButton" class="btn" disabled>播放录音</button>
+        <button id="sendButton" class="btn" disabled>发送录音</button>
 
-    <audio id="audioPlayback" controls></audio>
+        <audio id="audioPlayback" controls></audio>
+    </div>
 
     <script src="script.js"></script>
 </body>
