@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #1a1a1a;
+    color: #fff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,15 +11,17 @@ body {
 }
 
 .container {
-    background: #fff;
+    background: #2c2c2c;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
+    width: 90%;
+    max-width: 400px;
 }
 
 h1 {
-    color: #333;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -38,8 +41,6 @@ input[type="radio"] {
 
 .btn {
     display: inline-block;
-    background-color: #4CAF50;
-    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -51,13 +52,36 @@ input[type="radio"] {
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.btn-record {
+    background-color: #4CAF50; /* 绿色 */
+    color: white;
+}
+
+.btn-record:hover {
     background-color: #45a049;
+}
+
+.btn-play {
+    background-color: #008CBA; /* 蓝色 */
+    color: white;
+}
+
+.btn-play:hover {
+    background-color: #007bb5;
+}
+
+.btn-send {
+    background-color: #f44336; /* 红色 */
+    color: white;
+}
+
+.btn-send:hover {
+    background-color: #e53935;
 }
 
 audio {
     display: block;
-    margin-top: 20px;
+    margin: 20px auto;
     width: 100%;
     max-width: 300px;
 }
