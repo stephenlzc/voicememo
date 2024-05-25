@@ -7,12 +7,12 @@ let audio = document.getElementById('audioPlayback');
 document.getElementById('recordButton').addEventListener('click', async () => {
     if (mediaRecorder && mediaRecorder.state === 'recording') {
         mediaRecorder.stop();
-        document.getElementById('recordButton').textContent = '开始录音';
+        document.getElementById('recordButton').textContent = 'Star Record';
     } else {
         const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
         mediaRecorder = new MediaRecorder(stream);
         mediaRecorder.start();
-        document.getElementById('recordButton').textContent = '停止录音';
+        document.getElementById('recordButton').textContent = 'Stop Record';
 
         mediaRecorder.ondataavailable = event => {
             audioChunks.push(event.data);
