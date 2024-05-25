@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+button {
+    display: block;
+    margin: 10px 0;
+}
+
+audio {
+    display: block;
+    margin-top: 20px;
+}
