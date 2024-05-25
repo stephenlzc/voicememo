@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>工作记录</title>
+    <title>录音网站</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container">
@@ -20,9 +21,9 @@
                 <input type="radio" name="type" value="💼 待办事项"> 💼 待办事项
             </label>
         </form>
-        <button id="recordButton" class="btn">开始录音</button>
-        <button id="playButton" class="btn" disabled>播放录音</button>
-        <button id="sendButton" class="btn" disabled>发送录音</button>
+        <button id="recordButton" class="btn btn-record">Star Record</button>
+        <button id="playButton" class="btn btn-play" disabled>Play</button>
+        <button id="sendButton" class="btn btn-send" disabled>Send</button>
 
         <audio id="audioPlayback" controls></audio>
     </div>
