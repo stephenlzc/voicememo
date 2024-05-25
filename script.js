@@ -39,7 +39,7 @@ document.getElementById('sendButton').addEventListener('click', () => {
     formData.append('type', selectedType);
     formData.append('voice', audioBlob, 'recording.m4a');
 
-    fetch('https://hook.eu2.make.com/o41oj3uai96jm3td78jroa0jav5o8rlc', {
+    fetch('https://hook.eu2.make.com/xdjm5hoikwm8ycrk87yujpzm4s6zhfys', {
         method: 'POST',
         body: formData
     }).then(response => {
